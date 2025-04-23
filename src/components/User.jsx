@@ -1,10 +1,11 @@
 import React, { use, useState } from 'react'
-import { userdelete } from './store/reducers/Usereducer'
+import { userdelete } from '../store/reducers/Usereducer'
 import { useDispatch, useSelector } from 'react-redux'
-// import { userdelete } from './store/reducers/Usereducer'
+
 
 const User = () => {
-const {user} = useSelector(state =>state.Usereducer)
+const {user} = useSelector(state =>state.userReducer)
+
 const dispatch = useDispatch()
 
 const deletHandler = (index) =>{
